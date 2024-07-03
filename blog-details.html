@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="lib/slicknav.css">
+    <link rel="stylesheet" href="lib/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>new WOW().init();</script>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="menu-wrapper">
+
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+
+                        <div class="main-menu d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="shop.html">shop</a></li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li class=""><a href="#">Latest</a>
+                                        <ul class="submenu">
+                                            <li><a href="shop.html"> Product list</a></li>
+                                            <li><a href="product_details.html"> Product Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog.html">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="submenu">
+                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="cart.html">Cart</a></li>
+                                            <li><a href="confirmation.html">Confirmation</a></li>
+                                            <li><a href="checkout.html">Product Checkout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-right">
+                            <ul>
+                                <li>
+                                    <div class="nav-search search-switch">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </li>
+                                <li> <a href="login.html"><span><i class="fa-regular fa-user"></i></span></a></li>
+                                <li><a href="cart.html"><span><i class="fa-solid fa-cart-shopping"></i></span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none">
+
+                            <nav id="mobilemenu"></nav>
+                            <nav id="nav_menu">
+                                <ul>
+                                    <li><a href="index.html" role="menuitem" tabindex="-1">Home</a></li>
+                                    <li><a href="shop.html" role="menuitem" tabindex="-1">shop</a></li>
+                                    <li><a href="about.html" role="menuitem" tabindex="-1">about</a></li>
+                                    <li class="hot slicknav_parent slicknav_closed"><a href="#" role="menuitem"
+                                            aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row"><a
+                                                href="#" tabindex="-1">Latest</a>
+                                            <span class=""></span></a>
+                                        <ul class="submenu slicknav_collapsed" role="menu" aria-hidden="true"
+                                            style="display: none;">
+                                            <li><a href="shop.html" role="menuitem" tabindex="-1"> Product list</a></li>
+                                            <li><a href="product_details.html" role="menuitem" tabindex="-1"> Product
+                                                    Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="slicknav_parent slicknav_closed"><a href="#" role="menuitem"
+                                            aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row"><a
+                                                href="blog.html" tabindex="-1">Blog</a>
+                                            <span class=""></span></a>
+                                        <ul class="submenu slicknav_collapsed" role="menu" aria-hidden="true"
+                                            style="display: none;">
+                                            <li><a href="blog.html" role="menuitem" tabindex="-1">Blog</a></li>
+                                            <li><a href="blog-details.html" role="menuitem" tabindex="-1">Blog
+                                                    Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="slicknav_parent slicknav_closed"><a href="#" role="menuitem"
+                                            aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row"><a
+                                                href="#" tabindex="-1">Pages</a>
+                                            <span class=""></span></a>
+                                        <ul class="submenu slicknav_collapsed" role="menu" aria-hidden="true"
+                                            style="display: none;">
+                                            <li><a href="login.html" role="menuitem" tabindex="-1">Login</a></li>
+                                            <li><a href="cart.html" role="menuitem" tabindex="-1">Cart</a></li>
+
+                                            <li><a href="confirmation.html" role="menuitem"
+                                                    tabindex="-1">Confirmation</a></li>
+                                            <li><a href="checkout.html" role="menuitem" tabindex="-1">Product
+                                                    Checkout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html" role="menuitem" tabindex="-1">Contact</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="slider-area ">
+            <div class="single-slider slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap text-center">
+                                <h2>Blog details</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="blog_area single-post-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 posts-list">
+                        <div class="single-post">
+                            <div class="feature-img wow animate__animated animate__fadeInUp">
+                                <img class="img-fluid" src="images/single_blog_1.png" alt="">
+                            </div>
+                            <div class="blog_details wow animate__animated animate__fadeInUp">
+                                <h2>Second divided from form fish beast made every of seas
+                                    all gathered us saying he our
+                                </h2>
+                                <ul class="blog-info-link mt-3 mb-4 wow animate__animated animate__fadeInUp">
+                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                </ul>
+                                <p class="excert wow animate__animated animate__fadeInUp">
+                                    MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you
+                                    should have to spend money on boot camp when you can get the MCSE study materials
+                                    yourself at a
+                                    fraction of the camp price. However, who has the willpower
+                                </p>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you
+                                    should have to spend money on boot camp when you can get the MCSE study materials
+                                    yourself at a
+                                    fraction of the camp price. However, who has the willpower to actually sit through a
+                                    self-imposed MCSE training. who has the willpower to actually
+                                </p>
+                                <div class="quote-wrapper wow animate__animated animate__fadeInUp">
+                                    <div class="quotes">
+                                        MCSE boot camps have its supporters and its detractors. Some people do not
+                                        understand why you
+                                        should have to spend money on boot camp when you can get the MCSE study
+                                        materials yourself at
+                                        a fraction of the camp price. However, who has the willpower to actually sit
+                                        through a
+                                        self-imposed MCSE training.
+                                    </div>
+                                </div>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you
+                                    should have to spend money on boot camp when you can get the MCSE study materials
+                                    yourself at a
+                                    fraction of the camp price. However, who has the willpower
+                                </p>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not
+                                    understand why you
+                                    should have to spend money on boot camp when you can get the MCSE study materials
+                                    yourself at a
+                                    fraction of the camp price. However, who has the willpower to actually sit through a
+                                    self-imposed MCSE training. who has the willpower to actually
+                                </p>
+                            </div>
+                        </div>
+                        <div class="navigation-top">
+                            <div class="d-sm-flex justify-content-between text-center">
+                                <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i></span> Lily
+                                    and 4
+                                    people like this</p>
+                                <div class="col-sm-4 text-center my-2 my-sm-0">
+
+                                </div>
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="navigation-area">
+                                <div class="row">
+                                    <div
+                                        class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                                        <div class="thumb wow animate__animated animate__fadeInUp">
+                                            <a href="#">
+                                                <img class="img-fluid" src="images/preview.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="arrow wow animate__animated animate__fadeInUp">
+                                            <a href="#">
+                                                <span class="lnr text-white ti-arrow-left"></span>
+                                            </a>
+                                        </div>
+                                        <div class="detials wow animate__animated animate__fadeInUp">
+                                            <p>Prev Post</p>
+                                            <a href="#">
+                                                <h4>Space The Final Frontier</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                                        <div class="detials">
+                                            <p>Next Post</p>
+                                            <a href="#">
+                                                <h4>Telescopes 101</h4>
+                                            </a>
+                                        </div>
+                                        <div class="arrow">
+                                            <a href="#">
+                                                <span class="lnr text-white ti-arrow-right"></span>
+                                            </a>
+                                        </div>
+                                        <div class="thumb">
+                                            <a href="#">
+                                                <img class="img-fluid" src="images/next.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-author">
+                            <div class="media align-items-center wow animate__animated animate__fadeInUp">
+                                <img src="images/author.png" alt="">
+                                <div class="media-body ">
+                                    <a href="#">
+                                        <h4>Harvard milan</h4>
+                                    </a>
+                                    <p>Second divided from form fish beast made. Every of seas all gathered use saying
+                                        you're, he
+                                        our dominion twon Second divided from</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-area">
+                            <h4>05 Comments</h4>
+                            <div class="comment-list">
+                                <div class="single-comment justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex wow animate__animated animate__fadeInUp">
+                                        <div class="thumb">
+                                            <img src="images/comment_1.png" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <p class="comment">
+                                                Multiply sea night grass fourth day sea lesser rule open subdue female
+                                                fill which them
+                                                Blessed, give fill lesser bearing multiply sea night grass fourth day
+                                                sea lesser
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <h5>
+                                                        <a href="#">Emilly Blunt</a>
+                                                    </h5>
+                                                    <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                </div>
+                                                <div class="reply-btn">
+                                                    <a href="#" class="btn-reply text-uppercase">reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex wow animate__animated animate__fadeInUp">
+                                        <div class="thumb">
+                                            <img src="images/comment_2.png" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <p class="comment wow animate__animated animate__fadeInUp">
+                                                Multiply sea night grass fourth day sea lesser rule open subdue female
+                                                fill which them
+                                                Blessed, give fill lesser bearing multiply sea night grass fourth day
+                                                sea lesser
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex align-items-center wow animate__animated animate__fadeInUp">
+                                                    <h5>
+                                                        <a href="#">Emilly Blunt</a>
+                                                    </h5>
+                                                    <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                </div>
+                                                <div class="reply-btn">
+                                                    <a href="#" class="btn-reply text-uppercase">reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb wow animate__animated animate__fadeInUp">
+                                            <img src="images/comment_3.png" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <p class="comment wow animate__animated animate__fadeInUp">
+                                                Multiply sea night grass fourth day sea lesser rule open subdue female
+                                                fill which them
+                                                Blessed, give fill lesser bearing multiply sea night grass fourth day
+                                                sea lesser
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex align-items-center wow animate__animated animate__fadeInUp">
+                                                    <h5>
+                                                        <a href="#">Emilly Blunt</a>
+                                                    </h5>
+                                                    <p class="date">December 4, 2017 at 3:12 pm </p>
+                                                </div>
+                                                <div class="reply-btn">
+                                                    <a href="#" class="btn-reply text-uppercase">reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-form">
+                            <h4>Leave a Reply</h4>
+                            <form class="form-contact comment_form" action="#" id="commentForm">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control w-100" name="comment" id="comment" cols="30"
+                                                rows="9" placeholder="Write Comment"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" name="name" id="name" type="text"
+                                                placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" name="email" id="email" type="email"
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input class="form-control" name="website" id="website" type="text"
+                                                placeholder="Website">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="button button-contactForm btn_1 boxed-btn">Send
+                                        Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog_right_sidebar">
+                            <aside class="single_sidebar_widget search_widget">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Search Keyword"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Search Keyword'">
+                                            <div class="input-group-append">
+                                                <button class="btns" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                        type="submit">Search</button>
+                                </form>
+                            </aside>
+                            <aside class="single_sidebar_widget post_category_widget">
+                                <h4 class="widget_title">Category</h4>
+                                <ul class="list cat-list">
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Resaurant food</p>
+                                            <p>(37)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Travel news</p>
+                                            <p>(10)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Modern technology</p>
+                                            <p>(03)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Product</p>
+                                            <p>(11)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Inspiration</p>
+                                            <p>(21)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Health Care</p>
+                                            <p>(21)</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title">Recent Post</h3>
+                                <div class="media post_item wow animate__animated animate__fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                                    <img src="images/post_1.png" alt="post">
+                                    <div class="media-body">
+                                        <a href="single-blog.html">
+                                            <h3>From life was you fish...</h3>
+                                        </a>
+                                        <p>January 12, 2019</p>
+                                    </div>
+                                </div>
+                                <div class="media post_item wow animate__animated animate__fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                                    <img src="images/post_2.png" alt="post">
+                                    <div class="media-body">
+                                        <a href="single-blog.html">
+                                            <h3>The Amazing Hubble</h3>
+                                        </a>
+                                        <p>02 Hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="media post_item wow animate__animated animate__fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                                    <img src="images/post_3.png" alt="post">
+                                    <div class="media-body">
+                                        <a href="single-blog.html">
+                                            <h3>Astronomy Or Astrology</h3>
+                                        </a>
+                                        <p>03 Hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="media post_item wow animate__animated animate__fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.8s">
+                                    <img src="images/post_4.png" alt="post">
+                                    <div class="media-body">
+                                        <a href="single-blog.html">
+                                            <h3>Asteroids telescope</h3>
+                                        </a>
+                                        <p>01 Hours ago</p>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="single_sidebar_widget tag_cloud_widget">
+                                <h4 class="widget_title">Tag Clouds</h4>
+                                <ul class="list">
+                                    <li>
+                                        <a href="#">project</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">love</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">technology</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">travel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">restaurant</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">life style</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">illustration</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="single_sidebar_widget instagram_feeds">
+                                <h4 class="widget_title">Instagram Feeds</h4>
+                                <ul class="instagram_row flex-wrap">
+                                    <li>
+                                        <a href="#">
+                                            <img class="img-fluid wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s" src="images/post_5.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="img-fluid wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s" src="images/post_6.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="img-fluid wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s" src="images/post_7.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="img-fluid wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s" src="images/post_8.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="img-fluid wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s" src="images/post_9.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="img-fluid wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s" src="images/post_10.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="single_sidebar_widget newsletter_widget">
+                                <h4 class="widget_title">Newsletter</h4>
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Enter email'" placeholder="Enter email"
+                                            required="">
+                                    </div>
+                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                        type="submit">Subscribe</button>
+                                </form>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="images/logo2_footer.png" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do
+                                            eiusmod tem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#"> Offers &amp; Discounts</a></li>
+                                    <li><a href="#"> Get Coupon</a></li>
+                                    <li><a href="#"> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>New Products</h4>
+                                <ul>
+                                    <li><a href="#">Woman Cloth</a></li>
+                                    <li><a href="#">Fashion Accessories</a></li>
+                                    <li><a href="#"> Man Accessories</a></li>
+                                    <li><a href="#"> Rubber made Toys</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Frequently Asked Questions</a></li>
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Report a Payment Issue</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-8 col-md-7">
+                        <div class="footer-copy-right">
+                            <p>
+                                Copyright © 2023 All rights reserved | This template is made with <i class="fa fa-heart"
+                                    aria-hidden="true"></i> by <a href="#">Vishal Vagadiya</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-4 col-md-5">
+                        <div class="footer-copy-right f-right">
+
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+<script src="lib/slicknav.min.js"></script>
+<script src="lib/owl.carousel.min.js"></script>
+
+</html>
